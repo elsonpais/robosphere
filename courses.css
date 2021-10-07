@@ -1,0 +1,92 @@
+#section {
+  /* background-color: red; */
+}
+
+.course-card {
+  overflow: hidden;
+  /* background-color: yellow; */
+  margin: 20px 20px;
+  min-height: 50vh;
+  max-height: 50vh;
+  position: relative;
+  border-radius: 20px;
+  /* background-color: yellow; */
+}
+
+.course-card:hover {
+  padding: 10px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.course-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  filter: blur(3px);
+  /* border: 3px solid black; */
+}
+
+#course-card3 img {
+  transform: scaleX(-1);
+}
+
+.course-card h3,
+.course-card .p1,
+.course-card .p2 {
+  position: absolute;
+  color: white;
+}
+
+.course-card h3 {
+  font-size: 60px;
+  width: 80%;
+  top: 62%;
+  left: 1%;
+}
+
+.p1 {
+  font-size: 20px;
+  width: 60%;
+  top: 85%;
+  left: 1%;
+}
+
+.p2 {
+  top: 92%;
+  right: 1%;
+  font-size: 15px;
+}
+
+.course-content {
+  /* background-color: red; */
+  overflow: hidden;
+  margin: 0px 20px;
+  /* min-height: 50vh; */
+  position: relative;
+  border-radius: 20px;
+  border: 3px solid black;
+  display: none;
+}
+
+.video-link {
+  display: flex;
+  align-items: center;
+  /* background-color: yellow; */
+  padding: 10px 20px;
+  border-bottom: 3px solid black;
+}
+
+.video-link:hover {
+  background-color: black;
+  color: white;
+}
+
+.video-link span {
+  font-size: 40px;
+}
+
+.video-link h6 {
+  font-size: 20px;
+  margin-left: 15px;
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial Intelligence</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+        <link rel="stylesheet" href="old.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navbar Section-->
+        <nav class="navbar navbar-expand-sm navbar-light bg-warning fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><strong>ROBOSPHERE</strong>
+                    <!-- <img src="logo.png" height="100px"> -->
+                </a>
+                <button class="navbar-toggler" role="button" data-bs-toggle="collapse" data-bs-target="#NavbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Collapse Section-->
+                <div class="collapse navbar-collapse justify-content-end" id="NavbarContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link">SHOP</a></li>
+                        <li class="nav-item"><a class="nav-link">CONTACT</a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="search">
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- carousel-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="https://sitn.hms.harvard.edu/special-edition-artificial-intelligence/" target="_blank">
+                        <img src="images/news1.png" class="d-block w-100" alt="...">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="http://www.wfeo.org/international-forum-on-ai-and-the-futures-of-education/"
+                        target="_blank">
+                        <img src="images/news2.png" class="d-block w-100" alt="...">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://towardsdatascience.com/machine-learning-versus-the-news-3b5b479d8e6a"
+                        target="_blank">
+                        <img src="images/news3.png" class="d-block w-100" alt="...">
+                    </a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+    </header>
+
+    <main>
+
+        <div class="container">
+            <div class="row py-5">
+                <div class="col">
+                    <h2 class="display-2 text-warning">What's Trending?</h2>
+                </div>
+            </div>
+
+            <div class="row" id="trend1">
+                <div class="col-12 col-sm-5">
+                    <h3 class="display-5 trend-title">Augmented Reality</h3>
+                </div>
+            </div>
+            <div id="trend1-info">
+                <div class="row row-content align-items-center">
+                    <div class="col-12 col-sm-8 h4">
+                        <p>Augmented reality is an interactive experience of a real-world environment where the objects that reside in the real world are enhanced by computer-generated perceptual information, sometimes across multiple sensory modalities, including visual, auditory, haptic, somatosensory and olfactory.</p>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <img class="img-fluid rounded img-thumbnail" src="https://www.digitalartsonline.co.uk/cmsdata/features/3660899/ar_pokemon_go_istock_georgeclerk.jpg">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row" id="trend2">
+                <div class="col-12 col-sm-4 offset-sm-8">
+                    <h3 class="display-5 trend-title">Virtual Agents</h3>
+                </div>
+            </div>
+            <div id="trend2-info">
+                <div class="row row-content align-items-center">
+                    <div class="col-12 col-sm-4">
+                        <img class="img-fluid" src="images/PngItem_657631.png">
+                    </div>
+                    <div class="col-12 col-sm-8 h4">
+                        <p>Intelligent virtual agents are computer programs that leverage a mix of programmed rules and conversational artificial intelligence in order to offer a simple service or provide basic help. Virtual agents are a larger category of online services, containing chatbots, voice bots, and even interactive voice response systems.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="trend3">
+                <div class="col-12 col-sm-5">
+                    <h3 class="display-5 trend-title">Biometrics</h3>
+                </div>
+            </div>
+            <div id="trend3-info">
+                <div class="row row-content align-items-center">
+                    <div class="col-12 col-sm-8 h4">
+                        <p>Biometrics is the measurement and statistical analysis of people's unique physical and behavioral characteristics. The technology is mainly used for identification and access control or for identifying individuals who are under surveillance. The basic premise of biometric authentication is that every person can be accurately identified by intrinsic physical or behavioral traits.</p>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <img class="img-fluid rounded img-thumbnail" src="images/biometrics.jpg">
+                    </div>
+                </div>
+            </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 id="Heading">Trending Technologies in Artificial Intelligence</h1>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <img style="display: block;" class="margin-auto" height="300px"
+                        src="https://www.pikpng.com/pngl/b/185-1850422_ai-transparent-background-clipart.png"
+                        alt="Abstract picture of Artificial Intelligence">
+                </div>
+            </div>
+        </div>
+
+        <p style="width: 80%;" class="margin-auto">
+            <strong><em>Artificial Intelligence</em></strong> has changed the way we live with innovative
+            technologies.<strong>AI</strong> has taken a storm in every industry and has a profound impact on every
+            sector of society. The term Artificial intelligence terms were <strong>first coined in 1956</strong> at a
+            conference. The
+            discussion of the conference led to interdisciplinary information tech natural language generationnology.The
+            advent of the internet helped technology to progress exponentially. Artificial intelligence technology was a
+            stand-alone technology thirty years, but now the applications are widespread in every sphere of life.
+            Artificial intelligence is known by the AI acronym and is the process of <strong>recreating human
+                intelligence in machines</strong>.
+        </p>
+
+        <hr>
+
+        <table class="ai-table margin-auto">
+            <caption><strong><em>Jobs that will be taken over by AI</em></strong></caption>
+            <th>Job</th>
+            <th>Technology</th>
+            <tr>
+                <td>Customer service executives</td>
+                <td>Chatbots</td>
+            </tr>
+            <tr>
+                <td>Bookkeeping and Data-entry</td>
+                <td>AI and ML</td>
+            </tr>
+            <tr>
+                <td>Receptionists</td>
+                <td>Auto chech-ins</td>
+            </tr>
+            <tr>
+                <td>Proofreading</td>
+                <td>Apps</td>
+            </tr>
+            <tr>
+                <td>Manufacturing and Pharmaceutical work</td>
+                <td>Robots</td>
+            </tr>
+            <tr>
+                <td>Retail Services</td>
+                <td>Robots</td>
+            </tr>
+            <tr>
+                <td>Courier Services</td>
+                <td>Drones and Robots</td>
+            </tr>
+            <tr>
+                <td>Doctors</td>
+                <td>Robot-Surgeons</td>
+            </tr>
+            <tr>
+                <td>Soldiers</td>
+                <td>Robots</td>
+            </tr>
+            <tr>
+                <td>Taxi and Bus Drivers</td>
+                <td>Self-driving cars</td>
+            </tr>
+        </table>
+
+        <h2>Artificial intelligence adoption has grown from 4% to 15% during 2018-2019, according to the Gartner report.
+        </h2>
+
+        <div style="display: flex; justify-content: center;">
+            <div>
+                <h2>The top <br>trending technologies <br>in Artificial <br>Intelligence are</h2>
+            </div>
+            <div>
+                <ul>
+                    <li>Natural language generation</li>
+                    <li>Speech recognition</li>
+                    <li>Virtual agents</li>
+                    <li>Decision management</li>
+                    <li>Biometrics</li>
+                    <li>Machine learning</li>
+                    <li>Robotic process automation</li>
+                    <li>Peer-to-peer network</li>
+                    <li>Deep learning platforms</li>
+                    <li>AI optimized hardware</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tech-pics">
+            <img src="https://i1.wp.com/norellcopy.com/wp-content/uploads/2020/07/AdobeStock_227303445-SEO.jpg?resize=1024%2C768&ssl=1"
+                alt="natural language generation">
+            <img src="https://image.slidesharecdn.com/sr-170427000436/95/speech-recognition-system-1-638.jpg?cb=1494239334"
+                alt="speech recognition">
+            <img src="https://cdn3.iconfinder.com/data/icons/robotics-automation-and-digital-factory/32/friendly_robot_w-_headset-512.png"
+                alt="virtual assistant">
+            <img src="https://cdn.actico.com/wp-3f76a-content/uploads/2019/02/10125910/actico-platform-business-rules-decisions-illustration-640x569.png"
+                alt="decision management">
+            <img src="https://norrismclaughlin.com/ib/wp-content/uploads/sites/26/2020/09/shutterstock_1008974869-scaled.jpg"
+                alt="biometrics">
+            <img src="https://www.cyberark.com/wp-content/uploads/2019/05/Robot-Hand-on-Keyboard.jpg"
+                alt="robotic process automation">
+        </div>
+
+        <p style="width: 90%;" class="margin-auto">
+            Artificial Intelligence represents computational models of intelligence. Intelligence can be described as
+            structures, models, and
+            operational functions that can be programmed for problem-solving, inferences, language processing, etc.
+            The benefits of using artificial intelligence are already reaped in many sectors.
+        </p>
+        <br>
+        <br>
+        <div>
+            <h2>We're Hiring!</h2>
+            <fieldset>
+                <legend><strong>Join our Team</strong></legend>
+                <form action="ack.html" method="GET">
+                    <div>
+                        <div class="form-elem">
+                            <span class="red-ast">*</span>
+                            <label for="username"><strong>Name:</strong></label>
+                            <input type="text" name="username" id="username" maxlength="30"
+                                placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-elem">
+                            <span class="red-ast">*</span>
+                            <label for="emailid"><strong>Email:</strong></label>
+                            <input type="email" name="emailid" id="emailid" maxlength="20"
+                                placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-elem">
+                            <label for="gender"><strong>Gender:</strong></label>
+                            <select>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-elem">
+                            <span class="red-ast">*</span>
+                            <label for="dob"><strong>DOB:</strong></label>
+                            <input type="date" name="dob" id="dob" required>
+                        </div>
+                        <div class="form-elem">
+                            <label for="job-role"><strong>Preferred job roles:</strong></label>
+                            <input type="checkbox" name="job-role" id="job-role1">
+                            <label for="job-role1">Content Writing</label>
+                            <input type="checkbox" name="job-role" id="job-role2">
+                            <label for="job-role2">Research</label>
+                            <input type="checkbox" name="job-role" id="job-role3">
+                            <label for="job-role3">Web Development</label>
+                            <input type="checkbox" name="job-role" id="job-role4">
+                            <label for="job-role4">Social Media Manager</label>
+                        </div>
+                        <div class="form-elem">
+                            <label for="work-exp"><strong>Do you have any work experience in any of the above mentioned
+                                    fields?</strong></label>
+                            <input type="radio" name="work-exp" id="work-exp1" checked>
+                            <label for="work-exp1">Yes</label>
+                            <input type="radio" name="work-exp" id="work-exp2">
+                            <label for="work-exp2">No</label>
+                        </div>
+                        <div class="form-elem">
+                            <label style="display: block;" for="about"><strong>Tell us something about
+                                    yourself:</strong></label>
+                            <textarea name="about" id="about" rows="10" cols="30"
+                                placeholder="Start typing...."></textarea>
+                        </div>
+                        <div class="form-elem">
+                            <span class="red-ast">*</span>
+                            <label for="cv"><strong>Upload your CV:</strong></label>
+                            <input type="file" name="cv" id="cv" required>
+                        </div>
+                        <div>
+                            <button type="submit" class="submit-btn">Submit</button>
+                            <button type="reset" class="submit-btn">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </main>
+    <footer>
+        <h5>&copy; 2021 SYBScIT</h5>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#trend1").click(function() {
+                if ($("#trend1-info").is(":visible")) {
+                    $("#trend1-info").slideUp("slow");
+                } else {
+                    $("#trend1-info").slideDown("slow");
+                }
+            });
+            $("#trend2").click(function() {
+                if ($("#trend2-info").is(":visible")) {
+                    $("#trend2-info").slideUp("slow");
+                } else {
+                    $("#trend2-info").slideDown("slow");
+                }
+            });
+            $("#trend3").click(function() {
+                if ($("#trend3-info").is(":visible")) {
+                    $("#trend3-info").slideUp("slow");
+                } else {
+                    $("#trend3-info").slideDown("slow");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

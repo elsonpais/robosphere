@@ -1,0 +1,56 @@
+section {
+  padding: 0px 50px;
+}
+
+section h1 {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+section img {
+  height: 40vh;
+  border-radius: 10px;
+}
+
+.contentl img {
+  float: left;
+  padding-right: 25px;
+}
+
+.contentr img {
+  float: right;
+  padding-left: 25px;
+}
+
+.text {
+  text-align: justify;
+}
+
+/* h3 {
+  margin-top: 100px;
+} */
+
+.content {
+  margin: 40px auto 20px;
+}
+
+.content p {
+  text-align: justify;
+}
+
+.individual {
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.right {
+  float: right;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.left {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 10px;
+}

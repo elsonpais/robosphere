@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* background-color: #c1c9c4; */
+}
+
+body {
+  overflow: hidden;
+}
+
+/* .bg-img-container {
+  height: 100vh;
+  overflow: hidden;
+  filter: blur(3px);
+  padding: 10px 10px;
+}*/
+
+/* .bg-img-container {
+  left: -5px;
+  top: -100px;
+  bottom: -50px;
+  right: -5px;
+  position: fixed;
+  margin: -5px;
+  background-color: #a6aba7;
+}
+
+.bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(2px);
+}
+
+.form-box {
+  height: 90vh;
+  width: 30vw;
+  background-color: white;
+  position: absolute;
+  top: 15%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  margin: auto;
+  /* opacity: 0.4; */
+/*border-radius: 3px;
+} */
+
+/* .box {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+} */
+
+section {
+  display: flex;
+}
+
+.cover {
+  height: 100vh;
+  width: 55vw;
+  background-color: #c1c9c4;
+  position: relative;
+  overflow: hidden;
+}
+
+.cover h1 {
+  font-size: 30px;
+  text-align: center;
+  margin: 50px 0px 0px 0px;
+}
+
+.cover img {
+  height: 300px;
+  position: absolute;
+  right: 0%;
+  left: 5%;
+  top: 35%;
+}
+
+.cover p {
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+}
+
+.form-box {
+  height: 100vh;
+  width: 45vw;
+  margin: 10px;
+}
+
+/* .form-box h3 {
+  font-size: 50px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.form-label {
+  font-size: 25px;
+  position: absolute;
+  left: 27%;
+}
+
+.form-input {
+  font-size: 18px;
+  left: 52%;
+}
+
+.l1 {
+  top: 100%;
+}
+
+.l2 {
+  top: 170%;
+}
+
+.l3 {
+  top: 240%;
+}
+
+.l4 {
+  top: 310%;
+}
+
+.l5 {
+  top: 380%;
+}
+
+.i2 {
+  top: 170%;
+}
+
+.i3 {
+  top: 240%;
+}
+
+.i4 {
+  top: 310%;
+}
+
+.i5 {
+  top: 380%;
+}
+
+.form-input {
+  position: absolute;
+} */
+
+.container {
+  max-width: 400px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  border-radius: 20px;
+  height: 600px;
+  /* background-image: linear-gradient(to right, #0084ff, #00f2ff); */
+  border: none;
+  overflow: hidden;
+  /* box-shadow: 0 5px 8px #414141; */
+  z-index: 0;
+  box-sizing: border-box;
+}
+
+/* .circle {
+  position: absolute;
+  bottom: 230px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  clip-path: circle(50%);
+  height: 700px;
+  z-index: -1;
+  overflow: hidden;
+} */
+
+.myHed {
+  margin-top: 30px;
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  /* background-image: linear-gradient(to right, #0084ff, #00f2ff); */
+  /* color: transparent; */
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.far {
+  font-size: 40px;
+}
+
+.fas {
+  position: relative;
+  display: block;
+  left: -87px;
+  top: 30px;
+}
+
+.button {
+  width: 250px;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, #c9c9c9, white);
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px thick black;
+}
+
+.button:hover {
+  background-image: linear-gradient(to right, #7d7c7c, white);
+}
+
+.myInput {
+  width: 220px;
+  padding: 10px;
+  padding-left: 40px;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, #c9c9c9, white);
+  color: black;
+  border: 1px thick black;
+  display: block;
+}
+
+.myinput::placeholder {
+  color: white;
+  opacity: 0.6;
+}
+
+.myInput:focus {
+  border: none;
+  outline: none;
+}
+
+.check_1 {
+  font-weight: 500;
+  color: rgb(85, 85, 85);
+  font-size: 17px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.form-group {
+  margin: 15px 0px;
+}
+
+#signup:hover,
+#login:hover,
+#forgot:hover {
+  text-decoration: underline;
+}
+
+/* .hide-login {
+  transform: translateY(-630px);
+} */
+
+.hide-login,
+.show-signup {
+  transform: translateY(-630px);
+}

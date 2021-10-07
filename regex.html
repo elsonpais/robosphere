@@ -1,0 +1,67 @@
+<!DOCTYPE HTML><html>
+    <head>
+        <title>Calculator</title>
+        <script type="text/javascript">
+            function addMe()
+            {
+
+                //num1 is a handle to the textbox1
+                var num1 = document.getElementById('txt_num1');
+                //alert(num1);
+                //num2 is a handle to the textbox2
+                var num2 = document.getElementById('txt_num2');
+
+                var flag = true;
+                var pattern = /^([0-9]{1,3})$/;
+                var result = 0;
+                var alertStr = "";
+
+                if (!pattern.test(num1.value))
+                    {
+                        alertStr = "Enter numeric max 3 digits only inside num1";
+                        flag=false;
+                        num1.focus();
+                    }
+                if (!pattern.test(num2.value))
+                    {
+                        if (!flag) alertStr += " and \n";
+                        alertStr += "Enter numeric max 3 digits only inside num2";
+                        flag=false;
+                        num2.focus();
+                    }
+
+            if(flag)
+            {
+                result=parseFloat(num1.value)+parseFloat(num2.value);
+                document.getElementById('Disp_msg').innerHTML= "Result is " + result;
+            }
+            else
+            {
+                alert(alertStr);
+                document.getElementById('Disp_msg').innerHTML= "Result is invalid due to bad input";
+            }
+
+               
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <div style="background-color:lightgoldenrodyellow ;">
+        <form id="myform" name="myform">
+            <Label> Number 1: </Label>
+            <input type="text" id="txt_num1" placeholder="Enter value for 1 "> <br>
+
+            <Label> Number 2: </Label>
+            <input type="text" id="txt_num2" placeholder="Enter value"> <br>
+
+
+            <input type="button" onclick="addMe();" value="Add">
+            <br>
+
+            <p style="background-color:bisque;" id="Disp_msg">&nbsp;</p>
+        </form>
+    </div>
+    </body>
+</html>
